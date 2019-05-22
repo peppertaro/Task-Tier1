@@ -131,11 +131,11 @@ class App extends React.Component {
             <div className="ads-element content-box">
               <div className="ads-box">
                 <div className="ads-img">
-                  <img src="./img/ads-img.png" alt="" />
-                  <p className="ads-title pink">ads via Carbon</p>
+                  <img src="./img/ads-img.jpg" alt="" />
+                  <p className="ads-title pink">ads via TA</p>
                 </div>
                 <div className="ads-content gray">
-                  See what's new in the new Jira
+                  See what's new Me in this Ads!!
                 </div>
               </div>
             </div>
