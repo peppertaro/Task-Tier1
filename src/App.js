@@ -73,9 +73,9 @@ class App extends React.Component {
                 {PopularList.map(popularItem => {
                   return (
                     <Popular
-                      content={popularItem.PLcontent}
-                      name={popularItem.PLname}
-                      number={popularItem.PLnumber}
+                      PLcontent={popularItem.PLcontent}
+                      PLname={popularItem.PLname}
+                      PLnumber={popularItem.PLnumber}
                     />
                   );
                 })}
@@ -92,9 +92,9 @@ class App extends React.Component {
                 {JSHistoryList.map(JSHistoryItem => {
                   return (
                     <JSHistory
-                      img={JSHistoryItem.img}
-                      content={JSHistoryItem.content}
-                      date={JSHistoryItem.date}
+                      JSimg={JSHistoryItem.JSimg}
+                      JScontent={JSHistoryItem.JScontent}
+                      JSdate={JSHistoryItem.JSdate}
                     />
                   );
                 })}
@@ -120,9 +120,9 @@ class App extends React.Component {
                 {GithubHistoryList.map(GithubHistoryItem => {
                   return (
                     <GithubHistory
-                      repo={GithubHistoryItem.img}
-                      number={GithubHistoryItem.number}
-                      content={GithubHistoryItem.content}
+                      GHrepo={GithubHistoryItem.GHrepo}
+                      GHnumber={GithubHistoryItem.GHnumber}
+                      GHcontent={GithubHistoryItem.GHcontent}
                     />
                   );
                 })}
