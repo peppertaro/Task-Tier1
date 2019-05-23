@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Task-Tier1/static/css/main.e43bb4b0.chunk.css",
+    "main.js": "/Task-Tier1/static/js/main.5610a7d9.chunk.js",
+    "main.js.map": "/Task-Tier1/static/js/main.5610a7d9.chunk.js.map",
+    "runtime~main.js": "/Task-Tier1/static/js/runtime~main.0acf60bd.js",
+    "runtime~main.js.map": "/Task-Tier1/static/js/runtime~main.0acf60bd.js.map",
+    "static/js/2.7aa52c23.chunk.js": "/Task-Tier1/static/js/2.7aa52c23.chunk.js",
+    "static/js/2.7aa52c23.chunk.js.map": "/Task-Tier1/static/js/2.7aa52c23.chunk.js.map",
+    "index.html": "/Task-Tier1/index.html",
+    "precache-manifest.6bbf50797bc45acd775624c5d3425306.js": "/Task-Tier1/precache-manifest.6bbf50797bc45acd775624c5d3425306.js",
+    "service-worker.js": "/Task-Tier1/service-worker.js",
+    "static/css/main.e43bb4b0.chunk.css.map": "/Task-Tier1/static/css/main.e43bb4b0.chunk.css.map"
+  }
+}
