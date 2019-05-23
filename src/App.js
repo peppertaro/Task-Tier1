@@ -5,6 +5,13 @@ import JSHistory from "./JSHistory";
 import GithubHistory from "./GithubHistory";
 import Date from "./Date";
 import { PopularList, JSHistoryList, GithubHistoryList } from "./ListData";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faLightbulb, faClock } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fas, fab, faLightbulb, faClock);
 
 class App extends React.Component {
   render() {
@@ -14,32 +21,38 @@ class App extends React.Component {
           <div className="menu-element">
             <ul>
               <li className="menu-font">
-                <i className="fas fa-wrench" />
+                <FontAwesomeIcon icon="wrench" className="menu-i" />
                 SETTINGS
               </li>
               <li className="menu-font">
-                <i className="fas fa-code" />
+                <FontAwesomeIcon icon="code" className="menu-i" />
                 GISTS
               </li>
               <li className="menu-font">
-                <i className="fab fa-stack-overflow" />
+                <FontAwesomeIcon
+                  icon={["fab", "stack-overflow"]}
+                  className="menu-i"
+                />
                 STACK OVERFLOW
               </li>
               <li className="menu-font">
-                <i className="fas fa-chart-line" />
+                <FontAwesomeIcon icon="chart-line" className="menu-i" />
                 TRENDING
               </li>
               <li className="menu-font">
-                <i className="fas fa-pencil-alt" />
+                <FontAwesomeIcon icon="pencil-alt" className="menu-i" />
                 SEARCH PAD
               </li>
               <li className="menu-font">
-                <i className="far fa-lightbulb" />
+                <FontAwesomeIcon
+                  icon={["far", "lightbulb"]}
+                  className="menu-i"
+                />
                 PLAYGROUND
-                <i className="fas fa-lock" />
+                <FontAwesomeIcon icon="lock" />
               </li>
               <li className="menu-font">
-                <i className=" fas fa-question" />
+                <FontAwesomeIcon icon="question" className="menu-i" />
                 HELP/INTRO
               </li>
             </ul>
@@ -47,17 +60,25 @@ class App extends React.Component {
           <div className="initab-element">
             <img className="initab-img" src="./img/initab_logo.png" alt="" />
             <div className="initab-icons">
-              <i className="fab fa-facebook-f" />
-              <i className="fab fa-linkedin-in" />
-              <i className="fab fa-twitter" />
-              <i className="fab fa-reddit-alien" />
+              <FontAwesomeIcon icon={["fab", "facebook-f"]} className="sns-i" />
+              <FontAwesomeIcon
+                icon={["fab", "linkedin-in"]}
+                className="sns-i"
+              />
+              <FontAwesomeIcon icon={["fab", "twitter"]} className="sns-i" />
+              <FontAwesomeIcon
+                icon={["fab", "reddit-alien"]}
+                className="sns-i"
+              />
             </div>
           </div>
         </div>
         <div className="Main">
           <div className="popular-section">
             <h2 className="popular-title title">
-              <i className="fab fa-reddit-alien" />
+              <i>
+                <FontAwesomeIcon icon={["fab", "reddit-alien"]} />
+              </i>
               POPULAR ON R/JAVASCRIPT
             </h2>
             <div className="populars">
@@ -85,7 +106,9 @@ class App extends React.Component {
           <div className="Center-section">
             <div className="History-section">
               <h2 className="js-history-title title">
-                <i className="far fa-clock" />
+                <i>
+                  <FontAwesomeIcon icon={["far", "clock"]} />
+                </i>
                 RELEVANT JAVASCRIPT HISTORY
               </h2>
               <div className="js-histories">
@@ -108,7 +131,9 @@ class App extends React.Component {
           <div className="Right-Section">
             <div className="GitHub-issues-History-element">
               <h2 className="GitHub-issues-title title">
-                <i className="fab fa-github-alt" />
+                <i>
+                  <FontAwesomeIcon icon={["fab", "github-alt"]} />
+                </i>
                 GITHUB ISSUES HISTORY
               </h2>
               <p className="GitHub-issues-content">switch to gitlab</p>

@@ -204,13 +204,6 @@ body {
   font-size: 1.1rem;
   padding: 1rem;
   cursor: pointer;
-  i {
-    font-size: 1.2rem;
-    padding: 0.4rem;
-    margin-right: 0.8rem;
-    border-radius: 10%;
-    color: #44475a;
-  }
   .fa-wrench {
     background-color: #8be9fd;
   }
@@ -234,6 +227,15 @@ body {
   }
   .fa-lock {
     color: #f8f8f2;
+    margin-left: 0.8rem;
+  }
+  .menu-i {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.4rem;
+    margin-right: 0.8rem;
+    border-radius: 10%;
+    color: #44475a;
   }
 }
 
@@ -277,24 +279,25 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 1rem;
-  i {
-    border-radius: 50%;
-    color: #fff;
-    padding: 0.8rem;
-    font-size: 1.3rem;
-    cursor: pointer;
-  }
-  .fa-facebook-f {
+  :nth-of-type(1) {
     background-color: rgb(59, 89, 152);
   }
-  .fa-linkedin-in {
+  :nth-of-type(2) {
     background-color: rgb(0, 127, 177);
   }
-  .fa-twitter {
+  :nth-of-type(3) {
     background-color: rgb(85, 172, 238);
   }
-  .fa-reddit-alien {
+  :nth-of-type(4) {
     background-color: rgb(95, 153, 207);
+  }
+  .sns-i {
+    border-radius: 50%;
+    color: #fff;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.8rem;
+    cursor: pointer;
   }
 }
 /*Main*/
@@ -421,6 +424,10 @@ body {
   text-align: center;
   font-size: 1.2rem;
   color: #6272a4 !important;
+  cursor: pointer;
+  &:hover {
+    color: #f1fa8c !important;
+  }
 }
 
 .time-question i {
