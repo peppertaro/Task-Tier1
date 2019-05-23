@@ -355,7 +355,7 @@ body {
   text-overflow: ellipsis;
   width: 40rem;
   cursor: pointer;
-  :hover {
+  &:hover {
     color: #f1fa8c !important;
     transition: 0.3s;
   }
@@ -447,7 +447,7 @@ body {
   text-align: center;
   font-size: 1.4rem;
   cursor: pointer;
-  :hover {
+  &:hover {
     color: #f1fa8c !important;
   }
 }
