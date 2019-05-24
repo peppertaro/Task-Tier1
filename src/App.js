@@ -160,7 +160,7 @@ class App extends React.Component {
                   <p className="ads-title pink">ads via TA</p>
                 </div>
                 <div className="ads-content gray">
-                  See what's new Me in this Ads!!
+                  See what's new in this Ads!!
                 </div>
               </div>
             </div>
