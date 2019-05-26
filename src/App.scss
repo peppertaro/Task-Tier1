@@ -166,7 +166,7 @@ body {
 }
 
 .title {
-  color: #8be9fd !important;
+  color: #8be9fd;
   padding: 3rem 1rem 1rem;
   text-align: center;
   font-size: 1.5rem;
@@ -175,18 +175,27 @@ body {
     margin-right: 0.7rem;
   }
 }
-
+/*Colors*/
 .yellow {
-  color: #f1fa8c !important;
+  color: #f1fa8c;
 }
 
 .pink {
-  color: #ff79c6 !important;
+  color: #ff79c6;
 }
 
 .gray {
-  color: #6272a4 !important;
+  color: #6272a4;
 }
+
+$SETTINGS: #8be9fd;
+$GISTS: #50fa7b;
+$STACKOVERFLOW: #ffb86c;
+$TRENDING: #ff79c6;
+$SEARCHPAD: #bd93f9;
+$PLAYGROUND: #f8f8f2;
+$HELP: #e6db74;
+$facebook: rgb(59, 89, 152);
 
 /* SideBarSection*/
 .side-bar-section {
@@ -205,28 +214,28 @@ body {
   padding: 1rem;
   cursor: pointer;
   .fa-wrench {
-    background-color: #8be9fd;
+    background-color: $SETTINGS;
   }
   .fa-code {
-    background-color: #50fa7b;
+    background-color: $GISTS;
   }
   .fa-stack-overflow {
-    background-color: #ffb86c;
+    background-color: $STACKOVERFLOW;
   }
   .fa-chart-line {
-    background-color: #ff79c6;
+    background-color: $TRENDING;
   }
   .fa-pencil-alt {
-    background-color: #bd93f9;
+    background-color: $SEARCHPAD;
   }
   .fa-lightbulb {
-    background-color: #f8f8f2;
+    background-color: $PLAYGROUND;
   }
   .fa-question {
-    background-color: #e6db74;
+    background-color: $HELP;
   }
   .fa-lock {
-    color: #f8f8f2;
+    color: $PLAYGROUND;
     margin-left: 0.8rem;
   }
   .menu-i {
@@ -240,26 +249,25 @@ body {
 }
 
 .menu-font:nth-of-type(1) {
-  color: #8be9fd;
+  color: $SETTINGS;
 }
-
 .menu-font:nth-of-type(2) {
-  color: #50fa7b;
+  color: $GISTS;
 }
 .menu-font:nth-of-type(3) {
-  color: #ffb86c;
+  color: $STACKOVERFLOW;
 }
 .menu-font:nth-of-type(4) {
-  color: #ff79c6;
+  color: $TRENDING;
 }
 .menu-font:nth-of-type(5) {
-  color: #bd93f9;
+  color: $SEARCHPAD;
 }
 .menu-font:nth-of-type(6) {
-  color: #f8f8f2;
+  color: $PLAYGROUND;
 }
 .menu-font:nth-of-type(7) {
-  color: #e6db74;
+  color: $HELP;
 }
 
 .initab-element {
@@ -280,7 +288,7 @@ body {
   justify-content: space-around;
   margin: 1rem;
   :nth-of-type(1) {
-    background-color: rgb(59, 89, 152);
+    background-color: $facebook;
   }
   :nth-of-type(2) {
     background-color: rgb(0, 127, 177);

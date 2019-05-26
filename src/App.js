@@ -1,10 +1,16 @@
 import React from "react";
 import "./App.scss";
+import LinkMenu from "./LinkMenu";
 import Popular from "./Popular";
 import JSHistory from "./JSHistory";
 import GithubHistory from "./GithubHistory";
 import Date from "./Date";
-import { PopularList, JSHistoryList, GithubHistoryList } from "./ListData";
+import {
+  MenuList,
+  PopularList,
+  JSHistoryList,
+  GithubHistoryList
+} from "./ListData";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -19,43 +25,17 @@ class App extends React.Component {
       <div className="react-box">
         <div className="side-bar-section">
           <div className="menu-element">
-            <ul>
-              <li className="menu-font">
-                <FontAwesomeIcon icon="wrench" className="menu-i" />
-                SETTINGS
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon icon="code" className="menu-i" />
-                GISTS
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon
-                  icon={["fab", "stack-overflow"]}
-                  className="menu-i"
+            {MenuList.map(MenuItem => {
+              return (
+                <LinkMenu
+                  Menulink={MenuItem.Menulink}
+                  color={MenuItem.color}
+                  bgcolor={MenuItem.bgcolor}
+                  MenuName={MenuItem.MenuName}
+                  Lock={MenuItem.lock}
                 />
-                STACK OVERFLOW
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon icon="chart-line" className="menu-i" />
-                TRENDING
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon icon="pencil-alt" className="menu-i" />
-                SEARCH PAD
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon
-                  icon={["far", "lightbulb"]}
-                  className="menu-i"
-                />
-                PLAYGROUND
-                <FontAwesomeIcon icon="lock" />
-              </li>
-              <li className="menu-font">
-                <FontAwesomeIcon icon="question" className="menu-i" />
-                HELP/INTRO
-              </li>
-            </ul>
+              );
+            })}
           </div>
           <div className="initab-element">
             <img className="initab-img" src="./img/initab_logo.png" alt="" />

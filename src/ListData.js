@@ -1,3 +1,41 @@
+const MenuList = [
+  {
+    Menulink: "#Settings",
+    color: "#8be9fd",
+    MenuName: "SETTINGS"
+  },
+  {
+    Menulink: "#GISTS",
+    color: "background-color:$GISTS",
+    bgcolor: "color:$GISTS",
+    MenuName: "GISTS"
+  },
+  {
+    Menulink: "#STACKOVERFLOW",
+    color: "background-color:$STACKOVERFLOW",
+    bgcolor: "color:$STACKOVERFLOW",
+    MenuName: "STACK OVERFLOW"
+  },
+  {
+    Menulink: "#SEARCHPAD",
+    color: "background-color:$SEARCHPAD",
+    bgcolor: "color:$SEARCHPAD",
+    MenuName: "SEARCH PAD"
+  },
+  {
+    Menulink: "#PLAYGROUND",
+    color: "background-color:$PLAYGROUND",
+    bgcolor: "color:$PLAYGROUND",
+    MenuName: "PLAYGROUND",
+    lock: "lock"
+  },
+  {
+    Menulink: "#HELP",
+    color: "background-color:$HELP",
+    bgcolor: "color:$HELP",
+    MenuName: "HELP/INTRO"
+  }
+];
 const PopularList = [
   {
     PLcontent:
@@ -178,4 +216,4 @@ const GithubHistoryList = [
   }
 ];
 
-export { PopularList, JSHistoryList, GithubHistoryList };
+export { MenuList, PopularList, JSHistoryList, GithubHistoryList };
