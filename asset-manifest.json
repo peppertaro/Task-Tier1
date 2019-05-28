@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Task-Tier1/static/css/main.7beadee4.chunk.css",
+    "main.css": "/Task-Tier1/static/css/main.a3bcfcc8.chunk.css",
     "main.js": "/Task-Tier1/static/js/main.57d9f6b9.chunk.js",
     "main.js.map": "/Task-Tier1/static/js/main.57d9f6b9.chunk.js.map",
     "runtime~main.js": "/Task-Tier1/static/js/runtime~main.0acf60bd.js",
@@ -8,8 +8,8 @@
     "static/js/2.f9cde673.chunk.js": "/Task-Tier1/static/js/2.f9cde673.chunk.js",
     "static/js/2.f9cde673.chunk.js.map": "/Task-Tier1/static/js/2.f9cde673.chunk.js.map",
     "index.html": "/Task-Tier1/index.html",
-    "precache-manifest.100f93c31cbde0edc97c9dd56c83ca7d.js": "/Task-Tier1/precache-manifest.100f93c31cbde0edc97c9dd56c83ca7d.js",
+    "precache-manifest.f566b551d1019afb3c2c95d305d9d086.js": "/Task-Tier1/precache-manifest.f566b551d1019afb3c2c95d305d9d086.js",
     "service-worker.js": "/Task-Tier1/service-worker.js",
-    "static/css/main.7beadee4.chunk.css.map": "/Task-Tier1/static/css/main.7beadee4.chunk.css.map"
+    "static/css/main.a3bcfcc8.chunk.css.map": "/Task-Tier1/static/css/main.a3bcfcc8.chunk.css.map"
   }
 }
